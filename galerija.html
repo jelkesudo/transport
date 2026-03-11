@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/aos-master/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Galerija profesionalnih fotografija transporta, tehničkog pregleda i poslovnog prostora.">
+    <meta name="keywords" content="galerija, transport, tehnicki pregled, slike, vozila">
+    <meta name="author" content="Ime firme">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>Galerija</title>
+</head>
+
+<body>
+    <div id="pageLoader">
+  <div class="loader-spinner"></div>
+</div>
+    <div id="navbar" class="sticky-top"></div>
+
+    <section class="gallery-page-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="gallery-page-title">Galerija</h1>
+                <p class="gallery-page-subtitle">
+                    Pogledajte fotografije našeg transporta, tehničkog pregleda i poslovnog prostora.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-xl-3" data-aos="zoom-in">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="assets/img/1.png">
+                        <img src="assets/img/1.png" alt="Galerija 1" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="assets/img/2.png">
+                        <img src="assets/img/2.png" alt="Galerija 2" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="assets/img/3.png">
+                        <img src="assets/img/3.png" alt="Galerija 3" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="assets/img/4.png">
+                        <img src="assets/img/4.png" alt="Galerija 4" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3" data-aos="zoom-in">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="assets/img/5.png">
+                        <img src="assets/img/5.png" alt="Galerija 5" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="assets/img/truck.png">
+                        <img src="assets/img/truck.png" alt="Galerija 6" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content gallery-modal-content">
+                <button type="button" class="btn-close btn-close-white gallery-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body p-0">
+                    <img src="" id="modalImage" class="img-fluid w-100" alt="Uvećana slika">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="assets/aos-master/dist/aos.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/aos-master/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="description" content="Kontakt informacije, mapa, forma za upit i video kako doći do nas.">
+    <meta name="keywords" content="kontakt, mapa, tehnicki pregled, transport, lokacija">
+    <meta name="author" content="Ime firme">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>Kontakt</title>
+</head>
+
+<body>
+     <div id="pageLoader">
+  <div class="loader-spinner"></div>
+</div>
+    <div id="navbar" class="sticky-top"></div>
+
+    <section class="hero kontakt-hero">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold">
+                Kontakt
+            </h1>
+
+            <p class="lead mt-3">
+                Kontaktirajte nas za informacije o transportu, tehničkom pregledu, lokaciji i uslugama koje pružamo.
+            </p>
+
+            <a href="#contactFormSection" class="btn btn-warning btn-lg mt-3">
+                Pošaljite Upit
+            </a>
+            <a href="#videoLocation" class="btn btn-warning btn-lg mt-3">
+                Kako do nas
+            </a>
+        </div>
+    </section>
+
+    <section class="kontakt-info-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-sm-6 col-lg-3" data-aos="zoom-in">
+                    <div class="kontakt-info-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Adresa</h3>
+                        <p>Ulica i broj, grad</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="kontakt-info-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Telefon</h3>
+                        <p>+381 xx xxx xx xx</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="kontakt-info-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>info@firma.rs</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="kontakt-info-box">
+                        <i class="fa-solid fa-clock"></i>
+                        <h3>Radno vreme</h3>
+                        <p>Pon - Sub: 08:00 - 17:00</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="kontakt-main-section" id="contactFormSection">
+        <div class="container">
+            <div class="row g-0 home-service-box align-items-stretch">
+
+                <div class="col-lg-6">
+                    <div class="map-side">
+                        <span class="section-kicker">Lokacija</span>
+                        <h2 class="section-title">Kako Do Nas</h2>
+                        <p class="section-subtitle">
+                            Lako nas pronađite putem mape i posetite naš objekat bez komplikacija.
+                        </p>
+
+                        <div class="map-wrapper">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Beograd&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                width="100%"
+                                height="400"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-side">
+                        <span class="section-kicker">Kontakt forma</span>
+                        <h2 class="section-title">Pošaljite Upit</h2>
+                        <p class="section-subtitle">
+                            Pišite nam direktno putem forme i odgovorićemo vam u najkraćem mogućem roku.
+                        </p>
+
+                        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                            <input type="hidden" name="form-name" value="contact">
+
+                            <div class="mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control contact-input"
+                                    name="name"
+                                    placeholder="Ime i prezime"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <input
+                                    type="email"
+                                    class="form-control contact-input"
+                                    name="email"
+                                    placeholder="Email adresa"
+                                    required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <textarea
+                                    class="form-control contact-input"
+                                    name="message"
+                                    rows="6"
+                                    placeholder="Poruka"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-warning contact-submit-btn">
+                                Pošalji Poruku
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="videoLocation" class="kontakt-video-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Video lokacije</h2>
+                <p class="section-subtitle mx-auto contact-video-subtitle">
+                    Pogledajte video uputstvo koje olakšava dolazak do naše lokacije.
+                </p>
+            </div>
+
+            <div class="contact-video-wrapper" data-aos="fade-up">
+                <!-- YouTube varijanta -->
+                <iframe
+                    width="100%"
+                    height="520"
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="Kako do nas"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <!-- Ako bude lokalni video, koristi ovo umesto iframe:
+                <video controls width="100%" poster="assets/img/video-cover.png">
+                    <source src="assets/videos/kako-do-nas.mp4" type="video/mp4">
+                </video>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <section class="prevoz-cta">
+        <div class="container">
+            <div class="prevoz-cta-box text-center">
+                <h2>Imate Pitanje Za Nas?</h2>
+                <p>
+                    Tu smo za sve informacije u vezi transporta, tehničkog pregleda i dolaska na lokaciju.
+                </p>
+                <a href="tel:+381000000000" class="btn btn-warning btn-lg">Pozovite Nas</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="assets/aos-master/dist/aos.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
