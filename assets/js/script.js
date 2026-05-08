@@ -1,4 +1,10 @@
 window.onload = function () {
+    if (
+  window.location.pathname !== '/' &&
+  !window.location.pathname.includes('index.html')
+) {
+  window.location.href = '/';
+}
     AOS.init({
         duration: 800,
         once: true
