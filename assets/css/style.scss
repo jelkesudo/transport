@@ -1033,7 +1033,23 @@ textarea.contact-input {
     z-index: 3;
   }
 }
+.hero-slogan{
+  font-family:'Antonio', sans-serif;
 
+  font-size:clamp(1.1rem,2vw,1.6rem);
+
+  text-transform:uppercase;
+
+  letter-spacing:.18em;
+
+  color:#F8FF22;
+
+  margin-top:12px;
+  margin-bottom:26px;
+
+  text-shadow:
+    0 0 18px rgba(248,255,34,.18);
+}
 .kontakt-info-box {
   @include card($card);
   @include lift(-4px);
