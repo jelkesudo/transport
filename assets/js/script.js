@@ -24,7 +24,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+window.addEventListener("scroll", function () {
 
+    const navbar = document.querySelector(".navbar");
+
+    if(window.scrollY > 40){
+
+        navbar.classList.add("navbar-scrolled");
+
+    }
+    else{
+
+        navbar.classList.remove("navbar-scrolled");
+
+    }
+
+});
 window.addEventListener("load", function () {
   const loader = document.getElementById("pageLoader");
 
