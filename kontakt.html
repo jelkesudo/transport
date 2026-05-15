@@ -92,16 +92,46 @@
                             Lako nas pronađite putem mape i posetite naš objekat bez komplikacija.
                         </p>
 
-                        <div class="map-wrapper">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.2215792329903!2d20.17304399158595!3d44.667032511693094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a14f3e037659f%3A0x77e1674771a4e9b5!2sSlep%20sluzba%20Bugarski%20Obrenovac!5e1!3m2!1ssr!2srs!4v1778606365819!5m2!1ssr!2srs"
-                                width="100%"
-                                height="400"
-                                style="border:0;"
-                                allowfullscreen=""
-                                loading="lazy">
-                            </iframe>
-                        </div>
+                                <div class="map-switcher">
+
+    <button class="map-tab active"
+            data-map="slep">
+        Šlep služba
+    </button>
+
+    <button class="map-tab"
+            data-map="tehnicki">
+        Tehnički pregled
+    </button>
+
+</div>
+
+<div class="map-holder">
+
+     <iframe 
+            id="tehnickiMap"
+            class="mx-md-2 map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1201.2332784378168!2d20.177106198931202!3d44.66687808274728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a15f87cff6613%3A0xa083ea81088a7ff0!2sTehni%C4%8Dki%20pregled%20Bugarski!5e1!3m2!1ssr!2srs!4v1778875223022!5m2!1ssr!2srs" 
+            width="50%"
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    <iframe
+            id="slepMap"
+            class="mx-md-2 map-frame active"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.2215792329903!2d20.17304399158595!3d44.667032511693094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a14f3e037659f%3A0x77e1674771a4e9b5!2sSlep%20sluzba%20Bugarski%20Obrenovac!5e1!3m2!1ssr!2srs!4v1778606365819!5m2!1ssr!2srs"
+            width="50%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+</div>
                     </div>
                 </div>
 
