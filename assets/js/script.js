@@ -6,6 +6,39 @@ window.onload = function () {
 
   loadComponent("components/navbar.html", "navbar");
   loadComponent("components/footer.html", "footer");
+
+  const tabs = document.querySelectorAll(".map-tab");
+
+const slepMap = document.getElementById("slepMap");
+
+const tehnickiMap = document.getElementById("tehnickiMap");
+
+tabs.forEach(tab => {
+
+    tab.addEventListener("click", function(){
+
+        tabs.forEach(t => t.classList.remove("active"));
+
+        this.classList.add("active");
+
+        const type = this.dataset.map;
+
+        if(type === "slep"){
+
+            slepMap.classList.add("active");
+            tehnickiMap.classList.remove("active");
+
+        }
+        else{
+
+            tehnickiMap.classList.add("active");
+            slepMap.classList.remove("active");
+
+        }
+
+    });
+
+});
 };
 
 document.addEventListener("DOMContentLoaded", function () {

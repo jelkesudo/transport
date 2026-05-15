@@ -71,6 +71,10 @@ h3,
   margin-bottom: 10px;
 }
 
+.icon-footer {
+  color: #F8FF22;
+}
+
 p,
 li {
   color: #c7c7c7;
@@ -890,11 +894,60 @@ textarea.contact-input {
   resize: none;
 }
 
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+}
 .map-wrapper iframe {
   display: block;
-  width: 100%;
+  width: 50%;
   border-radius: 6px;
   filter: grayscale(0.28) contrast(1.08) brightness(0.88);
+}
+
+.map-switcher {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.map-tab {
+  background: #1b1b1b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f4f4f4;
+  padding: 12px 22px;
+  font-family: "Antonio", sans-serif;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.map-tab:hover {
+  border-color: #F8FF22;
+  color: #F8FF22;
+}
+
+.map-tab.active {
+  background: #F8FF22;
+  color: #111;
+  border-color: #F8FF22;
+  box-shadow: 0 0 18px rgba(248, 255, 34, 0.22);
+}
+
+.map-holder {
+  position: relative;
+  min-height: 540px;
+}
+
+.map-frame {
+  width: 100%;
+  height: 540px;
+  border: none;
+  display: none;
+}
+
+.map-frame.active {
+  display: block;
 }
 
 .kontakt-info-section {
@@ -1328,6 +1381,9 @@ textarea.contact-input {
 @media (max-width: 767.98px) {
   .highlight-item {
     border-right: none;
+  }
+  .map-wrapper iframe {
+    width: 100%;
   }
 }
 @media (max-width: 575.98px) {
