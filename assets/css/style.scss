@@ -124,6 +124,10 @@ h3,
   padding: 100px 0;
 }
 
+.text-yellow{
+  color: $yellow !important;
+}
+
 .section-title {
   font-size: 2.2rem;
   font-weight: 800;
@@ -147,6 +151,23 @@ h3,
   text-transform: uppercase;
   letter-spacing: .04em;
   margin-bottom: 10px;
+}
+.footer-contact-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.footer-custom-icon{
+  width:24px;
+  height:24px;
+
+  object-fit:contain;
+
+  flex-shrink:0;
+
+  filter:
+    drop-shadow(0 0 8px rgba(248,255,34,.18));
 }
 .icon-footer{
   color: $yellow;
@@ -626,6 +647,26 @@ footer {
   }
 }
 
+.custom-service-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(248, 255, 34, .22));
+}
+
+.service-card:hover .custom-service-icon,
+.highlight-item:hover .custom-service-icon,
+.benefit-box:hover .custom-service-icon {
+  transform: translateY(-2px) scale(1.04);
+  filter: drop-shadow(0 0 16px rgba(248, 255, 34, .38));
+}
+
+.service-card .custom-service-icon,
+.highlight-item .custom-service-icon,
+.benefit-box .custom-service-icon {
+  transition: all .25s ease;
+}
 .split-feature-section {
   padding: 0;
   background: $bg;
@@ -740,6 +781,7 @@ footer {
   i {
     font-size: 2rem;
     color: $yellow;
+    padding: 9px 0px;
   }
 
   span {
